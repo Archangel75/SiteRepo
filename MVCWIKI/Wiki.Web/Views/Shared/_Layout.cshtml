@@ -14,8 +14,14 @@
     <div class="navbar navbar-inverse">
         <div style="width:100%;overflow:hidden">
             <div style="width:20%;float:left">
-                <p style="color:chocolate;font-style:italic;font-size:larger;margin-left:17px">    Название приложухи</p>
-                <li>@Html.ActionLink("Имя приложения", "Index", "Home")</li>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-collapse collapse">
+                    <h2 style="color:chocolate;font-style:italic;font-size:larger;margin-left:17px;margin-top:7px">
+                        @Html.ActionLink("Имя приложения", "Index", "Home")
+                    </h2>
+                </div>                
             </div>
             <div>
                  <div class="search">
