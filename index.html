@@ -1,64 +1,65 @@
 <!DOCTYPE html>
 <html>
- <head>
-        <meta charset="utf-8">
-        <title>Форматирование текста в HTML5</title>
-		<style>
-			ul.column{
-  width: 100%;
-  padding: 0;
-  margin: 10px 0;
-  list-style: none;
-}
-ul.column li {
-  float: left;
-  width: 400px; /* ширина колонки по умолчанию */
-  padding: 0;
-  margin: 5px 0;
-  display: inline;
-}
-.block {
-  height: 355px;
-  font-size: 1em;
-  margin-right: 10px; /* отступ между колонками */
-  padding: 20px;
+	 <head>
+			<meta charset="utf-8">
+			<title>Форматирование текста в HTML5</title>
+			<style>
+				ul.column{
+				  width: 100%;
+				  padding: 0;
+				  margin: 10px 0;
+				  list-style: none;
+				}
+				ul.column li {
+				  float: left;
+				  width: 600px; /* ширина колонки по умолчанию */
+				  padding: 0;
+				  margin: 5px 0;
+				  display: inline;
+				}
+				.block {
+				  height: 355px;
+				  font-size: 1em;
+				  margin-right: 10px; /* отступ между колонками */
+				  padding: 20px;
 
-.block img {
+				.block img {
+					
+				  padding: 5%;
+				  background:#fff;
+				  margin: 0 auto;
+				  display: block;
 
-  padding: 5%;
-  background:#fff;
-  margin: 0 auto;
-  display: block;
-
-}
-
+				}		
+			</style>
+	 </head>
+	 <body>
+		<ul class="column">
+			<li>
+				<div class="block">
+					<p>Форматирование в <mark>HTML5</mark></p>
+					<p>Это <b>выделенный</b> текст</p>
+					<p>Это <strong>важный</strong> текст</p>
+					<p>Это <del>зачеркнутый</del> текст</p>
+					<p>Это <s>недействительный</s> текст</p>
+					<p>Это <em>важный</em> текст</p>
+					<p>Это текст <i>курсивом</i> </p>
+					<p>Это <ins>добавленный</ins> текст</p>
+					<p>Это <u>подчеркнутый</u> текст</p>
+					<p>X<sub>i</sub> = Y<sup><small>2</small></sup> + Z<sup><small>2</small></sup></p>
+				</div>
+				
+			</li>
+			<li>
+				<div class="block">
+					<img src="1480184708144619212.jpg" alt="Свидетель" style="float:left; margin-right:10px" />
+					<h1>Свидетель</h1>
+					<b>Свидетель</b> из Фрязино — популярный персонаж, используемый в фотожабах. Меметизировался летом 2006 года. 
+					Внешний вид: суровый, несколько похмельный мужик в белоснежных спортивных штанах и кожаной куртке.
+					Всем своим видом вызывает лютую ностальгию по 90-м.
+				</div>
+			</li>
 			
-			
-		</style>
-    </head>
-    <body>
-	<ul class="column">
-		<li>
-			<div class="block">
-				<p>Форматирование в <mark>HTML5</mark></p>
-				<p>Это <b>выделенный</b> текст</p>
-				<p>Это <strong>важный</strong> текст</p>
-				<p>Это <del>зачеркнутый</del> текст</p>
-				<p>Это <s>недействительный</s> текст</p>
-				<p>Это <em>важный</em> текст</p>
-				<p>Это текст <i>курсивом</i> </p>
-				<p>Это <ins>добавленный</ins> текст</p>
-				<p>Это <u>подчеркнутый</u> текст</p>
-				<p>X<sub>i</sub> = Y<sup><small>2</small></sup> + Z<sup><small>2</small></sup></p>
-			</div>
-			
-		</li>
-		<li>
-			<div class="block">
-				<img src="1480184708144619212.jpg" alt="Свидетель" />
-			</div>
-		</li>
-		
-	</ul>
+		</ul>
     </body>
 </html>
