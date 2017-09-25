@@ -11,7 +11,9 @@
 				  margin: 10px 0;
 				  list-style: none;
 				}
-				
+				ul#menu li {
+                display:inline;
+            }
 				 /*ul.column li {
 				  float: left;
 				  width: 600px; /* ширина колонки по умолчанию */
@@ -36,6 +38,13 @@
 			</style>
 	 </head>
 	 <body>
+		<ul id="menu">
+            <li>Главная</li>
+            <li>Блог</li>
+            <li>Форум</li>
+            <li>О сайте</li>
+        </ul>
+	 
 		<ul class="column">
 			<li>
 				<div class="block">
@@ -47,7 +56,7 @@
 						 <li>Lumia 950</li>
 					</ol>
 					<h2>Ненумерованный</h2>
-					<ul style="list-style-type:square;">
+					<ul style="list-style-image:url(svid.png);">
 						<li>iPhone 6S</li>
 						<li>Galaxy S7</li>
 						<li>Nexus 5X</li>
