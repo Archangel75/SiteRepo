@@ -4,33 +4,61 @@
         <meta charset="utf-8">
         <title>Форматирование текста в HTML5</title>
 		<style>
-			.column {
-			-webkit-column-width: 200px;
-			-moz-column-width: 200px;
-			column-width: 200px;
-			-webkit-column-count: 2;
-			-moz-column-count: 2;
-			column-count: 3;
-			-webkit-column-gap: 30px;
-			-moz-column-gap: 30px;
-			column-gap: 30px;
+			ul.column{
+  width: 100%;
+  padding: 0;
+  margin: 10px 0;
+  list-style: none;
+}
+ul.column li {
+  float: left;
+  width: 400px; /* ширина колонки по умолчанию */
+  padding: 0;
+  margin: 5px 0;
+  display: inline;
+}
+.block {
+  height: 355px;
+  font-size: 1em;
+  margin-right: 10px; /* отступ между колонками */
+  padding: 20px;
+
+.block img {
+
+  padding: 5%;
+  background:#fff;
+  margin: 0 auto;
+  display: block;
+
+}
+
+			
+			
 		</style>
     </head>
     <body>
-	<div class="column">
-		<p>
-		<p>Форматирование в <mark>HTML5</mark></p>
-        <p>Это <b>выделенный</b> текст</p>
-        <p>Это <strong>важный</strong> текст</p>
-        <p>Это <del>зачеркнутый</del> текст</p>
-        <p>Это <s>недействительный</s> текст</p>
-        <p>Это <em>важный</em> текст</p>
-        <p>Это текст <i>курсивом</i> </p>
-        <p>Это <ins>добавленный</ins> текст</p>
-        <p>Это <u>подчеркнутый</u> текст</p>
-        <p>X<sub>i</sub> = Y<sup><small>2</small></sup> + Z<sup><small>2</small></sup></p>
-		</p>
-		<p><img src="1480184708144619212.jpg" alt="Свидетель" /></p>
-	</div>
+	<ul class="column">
+		<li>
+			<div class="block">
+				<p>Форматирование в <mark>HTML5</mark></p>
+				<p>Это <b>выделенный</b> текст</p>
+				<p>Это <strong>важный</strong> текст</p>
+				<p>Это <del>зачеркнутый</del> текст</p>
+				<p>Это <s>недействительный</s> текст</p>
+				<p>Это <em>важный</em> текст</p>
+				<p>Это текст <i>курсивом</i> </p>
+				<p>Это <ins>добавленный</ins> текст</p>
+				<p>Это <u>подчеркнутый</u> текст</p>
+				<p>X<sub>i</sub> = Y<sup><small>2</small></sup> + Z<sup><small>2</small></sup></p>
+			</div>
+			
+		</li>
+		<li>
+			<div class="block">
+				<img src="1480184708144619212.jpg" alt="Свидетель" />
+			</div>
+		</li>
+		
+	</ul>
     </body>
 </html>
