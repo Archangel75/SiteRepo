@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Формы в HTML5</title>
+		<style>
+			ul#menu li {
+                display:inline;
+				
+            }
+			a:link    {color:blue; text-decoration:none}
+            a:visited {color:pink; text-decoration:none}
+            a:hover   {color:red; text-decoration:none}
+            a:active  {color:yellow; text-decoration:underline}
+		</style>
+    </head>
+    <body>
+		<ul id="menu">
+            <li><a href="https://metanit.com/web/html5/2.9.php" target="_blank">Учебник по html</a></li>
+            <li><a href="index.html">Главная</li>
+			<li><a href="forms.html">Формы</a></li>            
+            <li>О сайте</li>
+        </ul>
+	
+        <form method="post" autocomplete="off" action="http://localhost:8080/login.php">
+            <input name="login"/>
+			<input name="password" autocomplete="on"/>
+            <input type="submit" value="Войти" />
+        </form>
+    </body>
+</html>
