@@ -21,7 +21,11 @@
 			<li><a href="forms.html">Формы</a></li>            
             <li>О сайте</li>
         </ul>
-	
+		
+		<hr align="left" width="500" size="2" color="#A9A9A9" />
+		<br />
+		
+		<p>Текстовые поля</p>
         <form method="get" autocomplete="off" action="index.html">
 			<p>
                 <input type="text" name="search" />
@@ -41,6 +45,10 @@
                 <button type="reset">Отмена</button>
             </p>
         </form>
+		<hr align="left" width="500" size="2" color="#A9A9A9" />
+		
+		<br />
+		<p>Специализированные текстовые поля и список поле</p>
 		
 		<form>
             <p><input type="text" name="userName" placeholder="Введите имя" size="18" /></p>
@@ -62,5 +70,53 @@
             <option value="Lumia 950">35000</option>
             <option value="Nexus 5X"/>
         </datalist>
+		
+		<hr align="left" width="500" size="2" color="#A9A9A9" />
+		<br />
+		
+		<p>Нумерованное поле с шагом</p>
+		<form>
+            <p>
+                <label for="age">Возраст: </label>
+                <input type="number" step="1" min="1" max="100" value="10" id="age" name="age"/>
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+		
+		<hr align="left" width="500" size="2" color="#A9A9A9" />
+		<br />
+		
+		<p>Нумерованное поле с шагом и листом значений</p>
+		<form>
+            <p>
+                <label for="price">Цена: </label>
+                <input type="number" list="priceList"
+                    step="1000" min="3000" max="100000" value="10000" id="price" name="price"/>
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
+        <datalist id="priceList">
+            <option value="15000" />
+            <option value="20000" />
+            <option value="25000" />
+        </datalist>
+		
+		<hr align="left" width="500" size="2" color="#A9A9A9" />
+		<br />
+		
+		<p>Ползун</p>
+		<form>
+            <p>
+                <label for="price">Цена:</label> 
+                1<input type="range" step="1" min="0" max="100" value="10" id="price" name="price"/>100
+            </p>
+            <p>
+                <button type="submit">Отправить</button>
+            </p>
+        </form>
     </body>
 </html>
