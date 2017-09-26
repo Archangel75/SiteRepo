@@ -28,8 +28,14 @@
                 <input type="image" src="search.png" name="submit" />
             </p>
 			
-            <p><input name="login"/></p>
-			<p><input name="password" type="password" autocomplete="on"/></p>
+            <p>
+                <label for="login">Логин: </label>
+                <input type="text" id="login" autofocus name="login"  autocomplete="on" />
+            </p>
+            <p>
+                <label for="password">Пароль: </label>
+                <input type="password" id="password" name="password" />
+            </p>
              <p>
                 <button type="submit" formmethod="get" formaction="index.html">Отправить</button> 
                 <button type="reset">Отмена</button>
