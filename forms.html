@@ -23,9 +23,17 @@
         </ul>
 	
         <form method="get" autocomplete="off" action="index.html">
-            <input name="login"/>
-			<input name="password" type="password" autocomplete="on"/>
-            <input type="submit" value="Войти" />
+			<p>
+                <input type="text" name="search" />
+                <input type="image" src="search.png" name="submit" />
+            </p>
+			
+            <p><input name="login"/></p>
+			<p><input name="password" type="password" autocomplete="on"/></p>
+             <p>
+                <button type="submit" formmethod="get" formaction="index.html">Отправить</button> 
+                <button type="reset">Отмена</button>
+            </p>
         </form>
     </body>
 </html>
