@@ -75,6 +75,37 @@
 		<hr/>
 		<br/>
 		
+		<form method="get">
+            <p>
+                <label for="login">Логин:</label>
+                <input type="text" required id="login" name="login" />
+            </p>
+            <p>
+                <label for="password">Пароль:</label>
+                <input type="password" required id="password" name="password" />
+            </p>
+            <p>
+                <input type="submit" value="Отправить" />
+            </p>
+        </form>
+		
+		<hr/>
+		<br/>
+		
+		<form method="get">
+            <p>
+                <label for="phone">Телефон:</label>
+                <input type="text" placeholder="+1-234-567-8901"
+                        pattern="\+\d-\d{3}-\d{3}-\d{4}" id="phone" name="phone" />
+            </p>
+            <p>
+                <input type="submit" value="Отправить" formnovalidate />
+            </p>
+        </form>
+		
+		<hr/>
+		<br/>
+		
 		<p>
 			<a href="forms2.html"><<Предыдущая </a>
 			<a href="forms3.html"> Следующая>></a>
