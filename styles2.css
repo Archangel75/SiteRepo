@@ -129,3 +129,13 @@ input:invalid {
                 background-color: black;
             }
 			
+/*Селекторы атрибутов */
+input[type="text"]{
+     
+    border: 2px solid red;
+}			
+img[src$=".jpg"]{
+             
+    width: 100px;
+}			
+			
