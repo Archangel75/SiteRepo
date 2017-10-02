@@ -29,6 +29,10 @@ h1, #header, .redBlock{
             #footer p{
                 font-size: 13px;
             }
+			/*пробел между ли и редлинк означает что стиль относится к вложенным в ли элементам. Если пробела нет, но стиль относится к самому ли:
+			Пробел: <li>LG: <a class="redLink">LG G5</a></li>
+			Без пробела: <li class="redLink">Microsoft: <a>Lumia 650</a></li>
+			*/
 			 li .redLink{
                 color: red;
             }
