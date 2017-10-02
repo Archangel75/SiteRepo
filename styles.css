@@ -29,6 +29,7 @@ h1, #header, .redBlock{
             }
 
 
+
  #main p{
                 font-size: 16px;
             }
@@ -47,3 +48,6 @@ h1, h2, h3, h4{
                  
                 color: red;
             }
+			
+/*знак ~ стилизует все смежные элементы. + только один.*/			
+h2+div { color: red; }
