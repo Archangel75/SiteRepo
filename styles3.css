@@ -1,3 +1,16 @@
+/*внешний шрифт. сначала подключить. потом использовать*/
+@font-face{     
+    font-family: 'Roboto';
+    src:url('fonts/roboto.ttf');
+}
+
+@font-face {     
+    font-family: 'Roboto';
+    src: url(http://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2);
+	font-weight: bold;
+    font-style: italic;
+}	 
+
 div{
     background-color: red;
 	background-color: rgb(0%, 0%, 0%);
@@ -31,5 +44,8 @@ p {
 	font-style: italic;
 	font-style: normal;
     color: red;
+	font-family: Roboto;
 }
-	 
+
+
+
