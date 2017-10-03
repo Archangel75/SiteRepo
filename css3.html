@@ -13,9 +13,37 @@
 			<a href="http://fontawesome.ru" target="_blank">Шрифты от фонтавесоме</a>
 			
 			<p>Стиль Roboto может выделять <i>курсивом</i> и <b>жирным</b>, либо <b><i>и тем, и другим</i></b></p>
+			
+			<style>
+				 p.under {
+                text-decoration: underline;
+            }
+            p.over {
+                text-decoration: overline;
+            }
+            p.line {
+                text-decoration: line-through;
+            }
+            p.mixed {
+                text-decoration: underline line-through;
+            }
+            a.none {
+                text-decoration: none;
+            }
+			</style>
 	 </head>
 	 <body>
 		<h1>Цвета в ксс</h1>
+		
+		<p class="under">Это подчеркнутый текст.</p>
+        <p class="over">Это надчеркнутый текст</p>
+        <p class="line">Это зачеркнутый текст</p>
+        <p class="mixed">Это подчеркнутый и зачеркнутый текст</p>
+        <p>Не подчеркнутая <a href="index.php" class="none">ссылка<a></p>
+		
+		<p class="capitalize">Текст использует значение capitalize</p>
+        <p class="lowercase">Текст использует значение lowercase</p>
+        <p class="uppercase">Текст использует значение uppercase</p>
 			<div>
 				<p style="font-family:Arial; font-size:10pt;">Мой дед родился в Кронштадте, моя жена – ленинградка, так что в Петербурге
 я чувствую себя не совсем чужим. Впрочем, в России трудно найти человека, 
