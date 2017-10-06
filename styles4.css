@@ -1,0 +1,53 @@
+div{
+               /* margin-top: 30px;  отступ сверху */
+                /*margin-left: 25px;  отступ слева */
+               /* margin-right: 20px;  отступ справа */
+               /* margin-bottom: 15px; отступ снизу */
+				margin: 30px 20px 15px 25px;
+                padding: 11px; /* внутренний отступ */
+                border: 3px solid red; /* границы шириной в 3 пикселя сплошной красной линией */
+				/*border-radius: 30px;*/
+				/*border-radius: 15px 30px 5px 40px;*/
+				border-radius: 40px/20px;
+            }
+div.vert{
+	display:inline-block;
+	border: 1px none;
+}
+			
+div.outer{
+                 
+                margin: 25px;
+                 
+                /*padding-top:30px;
+                padding-right: 25px;
+                padding-bottom: 35px;
+                padding-left: 28px;*/
+                padding: 30px 25px 35px 28px;
+                border: 2px solid red;
+            }
+            div.inner{
+                 
+                height: 50px;
+                background-color:blue;
+            }			
+			
+/* для верхней границы 
+border-top-width
+border-top-style
+border-top-color
+ 
+ для нижней границы 
+border-bottom-width
+border-bottom-style
+border-bottom-color
+ 
+для левой границы 
+border-left-width
+border-left-style
+border-left-color
+ 
+ для правой границы 
+border-right-width
+border-right-style
+border-right-color*/
