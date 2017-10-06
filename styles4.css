@@ -13,6 +13,17 @@ div{
     background-size: cover;
     background-repeat: no-repeat;*/
 	background: #eee no-repeat border-box local url(cats.jpg);
+	box-shadow: 5px 3px 8px 3px #faa, 10px 4px 10px 3px #888 ;
+	/*
+	none: контур отсутствует
+solid: контур в виде обычной линии
+dashed: штриховая линия
+dotted: линия в виде последовательности точек
+double: контур в виде двух параллельных линий
+*/
+	outline-color: red;
+            outline-style: dashed;
+            outline-width: 2px;
 }
 .borderBox{background-clip: border-box;}
 .paddingBox{background-clip: padding-box;}
