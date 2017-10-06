@@ -17,20 +17,49 @@ div.vert{
 			
 div.outer{
                  
-                margin: 25px;
                  
                 /*padding-top:30px;
                 padding-right: 25px;
                 padding-bottom: 35px;
-                padding-left: 28px;*/
-                padding: 30px 25px 35px 28px;
-                border: 2px solid red;
+                padding-left: 28px;
+                padding: 30px 25px 35px 28px;*/
+				
+             width: 200px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 5px solid #ccc;
+            background-color: #eee;
             }
-            div.inner{
-                 
-                height: 50px;
-                background-color:blue;
-            }			
+            div.inner{                
+                
+			width: 80%;
+            height: 80%;
+            margin: auto;
+            border: 1px solid red;
+            background-color: blue;
+			box-sizing: padding-box;
+            }
+
+div.outer1{
+            box-sizing: content-box;
+        }
+        div.outer2{
+            box-sizing: border-box;
+        }			
+
+/*Свойство box-sizing позволяет переопределить установленные размеры элементов. Оно может принимать одно из следующих значений:
+content-box: значение свойства по умолчанию, при котором браузер для определения реальных ширины и высоты элементов добавляет 
+к значениям свойств width и height ширину границы и внутренние отступы
+padding-box: указывает веб-браузеру, что ширина и высота элемента должны включать внутренние отступы как часть своего значения.
+ Например, пусть у нас есть следующий стиль:
+ width: 200px;
+height: 100px;
+margin: 10px;
+padding: 10px;
+box-sizing: padding-box;
+ Здесь реальная ширина внутреннего содержимого блока будет равна 200px (width) - 10px (padding-left) - 10px (padding-right) = 180px.
+ */			
 			
 /* для верхней границы 
 border-top-width
