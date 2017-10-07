@@ -22,3 +22,16 @@ div.hardgrad{
 background-image: -moz-repeating-linear-gradient(left, #ccc 20px, red 30px, rgba(0, 0, 126, .5) 40px);
 background-image: -webkit-repeating-linear-gradient(left, #ccc 20px, red 30px, rgba(0, 0, 126, .5) 40px);
 }	
+
+div.radial{
+	/*
+	closest-side: градиент распространяется из центра только до ближайшей к центру стороне элемента. То есть градиент остается внутри элемента
+closest-corner: ширина градиента вычисляется по расстоянию из его центра до ближайшего угла элемента, поэтому градиент может выйти за пределы элемента.
+farthest-side: градиент распространяется из центра до самой дальней стороны элемента
+farthest-corner: ширина градиента вычисляется по расстоянию из его центра до самого дальнего угла элемента
+	*/
+	border-radius: 100px;
+	background-image: radial-gradient(25% 30%,farthest-side,white, black);
+            background-image: -moz-radial-gradient(25% 30%,farthest-side, white, black);
+            background-image: -webkit-radial-gradient(25% 30%, farthest-side, white, black);
+}
