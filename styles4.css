@@ -90,7 +90,22 @@ div.outer1{
         }
         div.outer2{
             box-sizing: border-box;
-        }			
+        }		
+
+.article1{
+            width: 300px;
+            height: 150px;
+            margin:15px;
+            border: 1px solid #ccc;
+            overflow: auto;
+        }
+        .article2{
+            width: 300px;
+            height: 150px;
+            margin:15px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }		
 
 /*Свойство box-sizing позволяет переопределить установленные размеры элементов. Оно может принимать одно из следующих значений:
 content-box: значение свойства по умолчанию, при котором браузер для определения реальных ширины и высоты элементов добавляет 
