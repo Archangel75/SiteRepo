@@ -13,16 +13,31 @@
             #header{ 
                 background-color: #ccc;
             }
-            #sidebar{
+            #leftsidebar{
 				background-color: #ddd;
 				float: left;
+				width: 150px;
+			}
+			#rightsidebar{
+				background-color: #ddd;
+				float: right;
 				width: 150px;
 			}
 			#main{
 				background-color: #eee;
 				height: 200px;
 				margin-left: 170px; /* 150px (ширина сайдбара) + 10px + 10px (2 отступа) */
+				margin-right: 170px; /* 150px (ширина сайдбара) + 10px + 10px (2 отступа) */
 			}
+			 #menu{
+				float: left;
+				width: 160px;
+                background-color: #ddd;
+            }
+            #content{
+				margin-left:180px;
+                background-color: #eee;
+            }
             #footer{ 
                 background-color: #ccc;
             }
@@ -31,8 +46,12 @@
     </head>
     <body>
         <div id="header">Шапка сайта</div>
-        <div id="sidebar">Сайбар</div>
-        <div id="main">Основное содержимое</div>
+        <div id="leftsidebar">Сайбар</div>
+		<div id="rightsidebar">Сайбар</div>
+        <div id="main">
+			<div id="menu">Меню</div>
+            <div id="content">Основное содержимое</div>
+		</div>
         <div id="footer">Футер</div>
     </body>
 </html>
