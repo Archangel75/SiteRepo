@@ -4,54 +4,59 @@
         <meta charset="utf-8">
         <title>Блочная верстка в HTML5</title>
         <style>
-            div{
-                margin: 10px;
-                border: 1px solid black;
-                font-size: 20px;
-                height: 80px;
+            body, h2, p{
+                margin:0;
+                padding:0;
+            }
+            body{
+                font-size: 18px;
             }
             #header{ 
-                background-color: #ccc;
-            }
-            #leftsidebar{
-				background-color: #ddd;
-				float: left;
-				width: 150px;
-			}
-			#rightsidebar{
-				background-color: #ddd;
-				float: right;
-				width: 150px;
-			}
-			#main{
-				background-color: #eee;
-				height: 200px;
-				margin-left: 170px; /* 150px (ширина сайдбара) + 10px + 10px (2 отступа) */
-				margin-right: 170px; /* 150px (ширина сайдбара) + 10px + 10px (2 отступа) */
-			}
-			 #menu{
-				float: left;
-				width: 160px;
-                background-color: #ddd;
-            }
-            #content{
-				margin-left:180px;
                 background-color: #eee;
+                border-bottom: 1px solid #ccc;
+                height: 80px;
+            }
+            #wrapper{
+                background-color: #ddd;
+				min-width: 150px;
+            }
+            #menu{
+                float: left;
+                width: 150px;
+				padding: 10px;
+				box-sizing:border-box;
+            }
+            #main{
+                background-color: #f7f7f7;
+                border-left: 1px solid #ccc;
+                margin-left: 150px;
+                padding: 10px;
             }
             #footer{ 
-                background-color: #ccc;
+                border-top: 1px solid #ccc;
+                background-color: #dedede;
             }
-			
         </style>
     </head>
     <body>
-        <div id="header">Шапка сайта</div>
-        <div id="leftsidebar">Сайбар</div>
-		<div id="rightsidebar">Сайбар</div>
-        <div id="main">
-			<div id="menu">Меню</div>
-            <div id="content">Основное содержимое</div>
-		</div>
-        <div id="footer">Футер</div>
+        <div id="header"><h2>Сайт MySyte.com</h2></div>
+        <div id="wrapper">
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">О сайте</a></li>
+                </ul>
+            </div>
+            <div id="main">
+                <h2>What is Lorem Ipsum?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                    has been the industry...</p>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Copyright © MySyte.com, 2016</p>
+        </div>
     </body>
 </html>
