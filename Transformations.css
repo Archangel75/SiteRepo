@@ -1,3 +1,29 @@
+@keyframes backgroundColorAnimation {
+                from {
+        background-color: red;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: green;
+    }
+    75%{
+        background-color: blue;
+    }
+    to {
+        background-color: violet;
+    }
+}
+@keyframes colorAnimation {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+
 div{
 	background-color:#ccc;
 	width:120px;
@@ -9,11 +35,13 @@ div{
 	display: inline-block;
 	
 	/*можно просто так: 	
-transition: background-color 3s ease-in-out 500ms;*/
+transition: background-color 3s ease-in-out 500ms;
+---------------------------------------------------------------
 	transition-property: background-color;
 	transition-property: color,background-color, width, height, border-color;
     transition-duration: 500ms, 2s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;*/
+	
 }
 .rotated{
 	transform:rotate(30deg);
@@ -55,10 +83,18 @@ transform: skew(X, Y);
     transform: rotate(-45deg);
 }
 div:hover{
+	/*можно так
+	animation: backgroundColorAnimation, colorAnimation 2s,3s infinite alternate forwards*/
+	animation-name: backgroundColorAnimation, colorAnimation;
+                animation-duration: 2s,3s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+animation-fill-mode: forwards;
+	/*
 	color: green;
                  background-color: red;
     width: 120px;
     height: 120px;
-    border-color: blue;
+    border-color: blue;*/
 }
             }
