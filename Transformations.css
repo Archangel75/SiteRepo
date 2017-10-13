@@ -7,6 +7,13 @@ div{
 	box-sizing:border-box;
 	border:1px solid #333;
 	display: inline-block;
+	
+	/*можно просто так: 	
+transition: background-color 3s ease-in-out 500ms;*/
+	transition-property: background-color;
+	transition-property: color,background-color, width, height, border-color;
+    transition-duration: 500ms, 2s;
+    transition-timing-function: ease-in-out;
 }
 .rotated{
 	transform:rotate(30deg);
@@ -15,5 +22,43 @@ div{
     transform: scale(0.5);
 }
 .doubleScale{
-	transform: scale(2);
+	transform: scale(1.5);
 }
+/*можно использовать scaleX(2);*/
+.scale1{
+    transform: scale(2, 0.5);
+}
+.scale2{
+    transform: scaleX(-1);
+}
+/*transform: translateX(30px);
+transform: skew(X, Y);
+*/
+.translated{
+    transform: translate(50px, 30px);
+    background-color:red;
+}
+.skewed{
+	transform: skew(30deg, 10deg);
+    background-color:red;
+}
+
+.transform1{
+    transform: rotate(-45deg);
+}
+.transform2{
+	transform-origin: left top;
+    transform: rotate(-45deg);
+}
+.transform3{
+	transform-origin: right bottom;
+    transform: rotate(-45deg);
+}
+div:hover{
+	color: green;
+                 background-color: red;
+    width: 120px;
+    height: 120px;
+    border-color: blue;
+}
+            }
