@@ -1,0 +1,15 @@
+/*можно сделать импорт других ксс в один файл, чтобы не линковать в хтмл кучу файлов.*/
+@import url(desctop.css);
+@import url(tablet.css) (min-device-width:481px) and (max-device-width:768);
+@import url(mobile.css) (max-device-width:480px);
+/*CSS3 Media Query*/
+body {
+    background-color: red;
+}
+/*Далее остальные стили*/
+@media (max-device-width:480px){
+    body {
+        background-color: blue;
+    }
+    /*Далее остальные стили*/
+}
